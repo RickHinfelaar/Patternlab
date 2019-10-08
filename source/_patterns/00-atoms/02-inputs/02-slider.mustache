@@ -1,0 +1,20 @@
+<div class="innerSliderBox">
+  <div id="sliderjquery" class="sliders"></div>
+</div>
+
+<script>
+$(function() {
+$( "#sliderjquery" ).slider({
+    min: 0, // MINIMUM VALUE
+    range: "min", // START SLIDER FROM MIN
+    max: 1000000, // MAXIMUM VALUE
+    value: 50000, // STARTING POINT
+    animate:"fast", // ANIMATION SPEED
+    step: 100, // STEP
+    orientation: "horizontal", // ORIENTATION
+    slide: function( event, bezoekers ) { // WHEN SLIDER IS SLIDED
+
+    } // END SLIDING
+    }); // END SLIDER
+  });
+</script>

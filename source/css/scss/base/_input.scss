@@ -1,0 +1,69 @@
+/*OUTPUT BOX ALL STYLES */
+.sliderOutput {
+  width: 25%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(204, 204, 204, 1);
+  text-align: center;
+  transition: all .2s ease-in;
+  padding: 4px;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 24px;
+}
+
+.sliderOutput:hover, .sliderOutput:focus {
+  border: 2px solid rgba(15,123,200, .8);
+  box-sizing: border-box;
+}
+
+.bottomOutput {
+    text-align: center;
+    font-size: 32px;
+    background: $color-primary;
+    cursor: default;
+    color: #fff;
+    padding: 4px;
+    box-sizing: border-box;
+    height: 40px;
+    border: none;
+    width: 50%;
+}
+
+
+.innerSliderBox {
+  width: 95%;
+  margin: 0 auto;
+  user-select: none;
+}
+
+/* JQUERY SLIDER BASE*/
+.sliders.ui-slider {
+  height: 16px;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* JQUERY SLIDER POINTER*/
+.sliders.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: #0F7BC8;
+  border-radius: 16px;
+  border: 1.5px solid #fff;
+  position: absolute;
+  font-size: 16px;
+  top: -3px;
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+}
+.ui-widget-content .ui-state-default:hover,
+.ui-widget-content .ui-state-default:focus {
+  transform: scale(1.05);
+}
+/* JQUERY SLIDER ACTIVE COLOR */
+.sliders .ui-widget-header {
+  background: #0F7BC8;
+  height: 16px;
+  border-radius: 4px;
+}

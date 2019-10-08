@@ -1,0 +1,265 @@
+/*------------------------------------*\
+    $ABSTRACTS
+\*------------------------------------*/
+/* FONTS */
+@font-face {
+  font-family: "VerlagLight";
+  src: url("../fonts/Verlag-Light.otf");
+}
+@font-face {
+  font-family: "VerlagBlack";
+  src: url("../fonts/Verlag-Black.otf");
+}
+@font-face {
+  font-family: "VerlagBook";
+  src: url("../fonts/Verlag-Book.otf");
+}
+#bodyId {
+  font-size: 20px;
+  font-family: "VerlagLight";
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/* PRIMARY */
+#colorPrimary {
+  background-color: #0F7BC8;
+}
+
+#colorSecondary {
+  background-color: #c0c0c0;
+}
+
+#colorText {
+  background-color: #575A60;
+}
+
+.fontLight {
+  font-family: "VerlagLight";
+}
+
+.fontBook {
+  font-family: "VerlagBook";
+}
+
+.title {
+  font-size: 32px;
+  letter-spacing: 4px;
+  color: #0F7BC8;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*TEXT ELEMENTS */
+.paragraph {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  color: #575A60;
+}
+
+.label {
+  text-transform: uppercase;
+  font-family: "VerlagBook";
+  cursor: pointer;
+  letter-spacing: 2px;
+  color: #575A60;
+  text-align: center;
+}
+
+.label:hover {
+  color: #0F7BC8;
+}
+
+.labelBottom {
+  background-color: #0F7BC8;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  width: 20%;
+}
+
+.teken {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.procentTeken {
+  right: 0px;
+}
+
+.euroTeken {
+  left: 0px;
+}
+
+.labelsSlider {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*LABELS UNDER SLIDER */
+.minLabel {
+  float: left;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.maxLabel {
+  float: right;
+  margin-top: 4px;
+}
+
+/*OUTPUT BOX ALL STYLES */
+.sliderOutput {
+  width: 25%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  padding: 4px;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 24px;
+}
+
+.sliderOutput:hover, .sliderOutput:focus {
+  border: 2px solid rgba(15, 123, 200, 0.8);
+  box-sizing: border-box;
+}
+
+.bottomOutput {
+  text-align: center;
+  font-size: 32px;
+  background: #0F7BC8;
+  cursor: default;
+  color: #fff;
+  padding: 4px;
+  box-sizing: border-box;
+  height: 40px;
+  border: none;
+  width: 50%;
+}
+
+.innerSliderBox {
+  width: 95%;
+  margin: 0 auto;
+  user-select: none;
+}
+
+/* JQUERY SLIDER BASE*/
+.sliders.ui-slider {
+  height: 16px;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* JQUERY SLIDER POINTER*/
+.sliders.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: #0F7BC8;
+  border-radius: 16px;
+  border: 1.5px solid #fff;
+  position: absolute;
+  font-size: 16px;
+  top: -3px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ui-widget-content .ui-state-default:hover,
+.ui-widget-content .ui-state-default:focus {
+  transform: scale(1.05);
+}
+
+/* JQUERY SLIDER ACTIVE COLOR */
+.sliders .ui-widget-header {
+  background: #0F7BC8;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.PlusMinButtons {
+  transform: scale(1.4);
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.PlusMinSvg {
+  vertical-align: center;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  fill: #0F7BC8;
+  box-sizing: border-box;
+}
+
+.PlusMinSvg:hover {
+  background-color: #0F7BC8;
+  fill: #fff;
+}
+
+.contactButton {
+  transition: all 0.2s ease-out;
+  background-color: #fff;
+  color: #0F7BC8;
+  border: 1px solid #0F7BC8;
+  font-size: 24px;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 8px 16px;
+}
+
+.contactButton:hover {
+  background: #0F7BC8;
+  color: #fff;
+}
+
+/* SAVE BUTTON */
+.saveButton {
+  transition: all 0.2s ease-in-out;
+  background-color: #fff;
+  color: #2b7fb3;
+  border: 1px solid #0F7BC8;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.saveButton:hover {
+  background: #0F7BC8;
+  color: #fff;
+}
+
+.sliderBox {
+  flex-direction: column;
+  text-align: center;
+  height: 160px;
+  width: 64%;
+  border: 1px solid #c0c0c0;
+  background-color: rgba(196, 191, 182, 0.1);
+}
+
+/* FIXED BOTTOM BAR */
+.fixed {
+  height: 142px;
+  width: 100%;
+  z-index: 100;
+  background-color: #0F7BC8;
+  opacity: 0.97;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */

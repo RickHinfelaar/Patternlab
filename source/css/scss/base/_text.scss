@@ -1,0 +1,72 @@
+.fontLight {
+  font-family: 'VerlagLight';
+}
+
+.fontBook {
+  font-family: 'VerlagBook';
+}
+
+.title {
+  font-size: 32px;
+  letter-spacing: 4px;
+  color: $color-primary;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*TEXT ELEMENTS */
+.paragraph {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  color: $color-text;
+}
+
+.label {
+  text-transform: uppercase;
+  font-family: 'VerlagBook';
+  cursor: pointer;
+  letter-spacing: 2px;
+  color: $color-text;
+  text-align: center;
+}
+.label:hover {
+  color: $color-primary;
+}
+
+.labelBottom {
+  background-color: $color-primary;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  width: 20%;
+}
+
+.teken {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 3;
+}
+.procentTeken {
+  right: 0px;
+}
+.euroTeken {
+  left: 0px;
+}
+
+
+.labelsSlider{
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*LABELS UNDER SLIDER */
+.minLabel {
+  float: left;
+  margin-top: 4px;
+  text-align: left;
+}
+.maxLabel {
+  float: right;
+  margin-top: 4px;
+}
